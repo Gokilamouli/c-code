@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <malloc.h>
+type def struct node {
+                    int data;
+                  int empty;
+        struct node*next;
+}node;
+struct ring_buffer create_buffer(int size)
+{
+  struct ring _buffer b;
+  b.start=(node*) malloc(size of(node));
+  b.start->empty =L;
+  b.start->next=null;
+}
+node*ptr =b.start;
+  for(int i=0;i=size–¹;i++){ 
+node*newnode=(node*) malloc(size of (sizenode))
+    newnode->empty=1;
+    newnode->next=null;
+    ptr->next=newnode;
+    ptr=ptr->next;
+}
+   ptr->next=b.start;
+   b.end=b.start;
+   b.buff-start=b.start;
+   return b;
+}
+Void display (struct ring-buffer b)
+{
+node*ptr=b.buff-start;
+def
+  if(ptr->empty==1)
+  printf(“NULL"->");
+else.
+  printf(“%d->",ptr->data);
+  ptr=ptr->next;
+ }while (ptr!=b.buff-start);
+ printf(“|b|b|b|b |b|b|b|n");
+}.
